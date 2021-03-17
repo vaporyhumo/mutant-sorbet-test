@@ -1,0 +1,16 @@
+---
+# fail_fast: true
+integration: rspec
+
+includes:
+  - lib
+
+requires:
+  - boot
+
+matcher:
+  subjects:
+    - WithNoRuntime*
+      # - WithSig*
+
+mutation_timeout: 2.0
